@@ -57,10 +57,9 @@ const Check = () =>{
 
 const Select = (index) =>{
 
-    for(let i = 0; i < nill.length; i++){
-        if(index = nill[i])
-        break
-    }
+    // for(let i = 0; i < nill.length; i++){
+    //     if(index = nill[i])
+    // }
     nill = [...nill, index]
 
     if(player === 0){
