@@ -16,7 +16,11 @@ const wins = [
     "0,0,1,0,1,0,1,0,1",
     "0,0,1,0,1,1,0,0,1",
     "1,0,1,0,1,0,0,0,1",
-    "1,0,1,0,1,0,1,0,0"
+    "1,0,1,0,1,0,1,0,0",
+    "1,0,1,0,1,0,0,1,1",
+    "0,1,0,0,1,1,0,1,0",
+    "1,1,0,0,1,0,0,0,1",
+    "0,1,0,1,1,1,0,0,0"
 ]
 var nill = []
 var player = 0, player1 = [ 0, 0, 0, 0, 0, 0, 0, 0, 0], player2 = [ 0, 0, 0, 0, 0, 0, 0, 0, 0]
@@ -24,6 +28,7 @@ let block = document.getElementsByClassName("block")
 
 const Check = () =>{
     console.log(player1.toString())
+    console.log(player2.toString())
     let winner = false, victor
     var draw = false
     for(let i = 0; i < wins.length; i++){
